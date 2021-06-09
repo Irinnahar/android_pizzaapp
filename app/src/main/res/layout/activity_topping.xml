@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        style="@style/default_activity_style"
+        android:orientation="vertical"
+        tools:context=".ToppingActivity">
+
+        <TextView
+            android:id="@+id/topping_text"
+            android:layout_width="330dp"
+            android:layout_height="64dp"
+            android:text="@string/topping_title"
+            style="@style/Header_text"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Spinner
+            android:id="@+id/pizza_size_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="50dp"/>
+
+        <TextView
+            android:id="@+id/selectCrust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/crust_title"
+            style="@style/Header_text"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupCrust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thin_crust"
+                android:buttonTint="@color/light_green"
+                />
+            <RadioButton android:id="@+id/radio_thick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thick_crust"
+                android:buttonTint="@color/light_green"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/checkout"
+            style="@style/Button_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickAddToCart"
+            android:text="@string/checkout"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+</ScrollView>

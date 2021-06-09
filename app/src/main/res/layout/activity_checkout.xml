@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/default_activity_style"
+    android:orientation="vertical"
+    tools:context=".CheckoutActivity">
+
+
+    <TextView
+        android:id="@+id/checkboxTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Header_text"
+        android:text="@string/checkout_title" />
+
+    <TextView
+        android:id="@+id/sizeType"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="96dp"
+        style="@style/checkout_textview"/>
+
+    <TextView
+        android:id="@+id/crustType"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="96dp"
+        style="@style/checkout_textview"/>
+
+    <TextView
+        android:id="@+id/pizzaType"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="96dp"
+        style="@style/checkout_textview"/>
+
+    <TextView
+        android:id="@+id/pizzaIngredient"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="96dp"
+        style="@style/checkout_textview"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_btn"
+        android:layout_gravity="center"
+        android:onClick ="onClickCheckout"
+        style="@style/Button_default"/>
+
+
+</LinearLayout>

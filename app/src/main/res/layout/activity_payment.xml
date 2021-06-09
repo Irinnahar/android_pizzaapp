@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      style="@style/default_activity_style"
+      android:orientation="vertical"
+      tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_title"
+        style="@style/Header_text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <RadioButton android:id="@+id/radio_cash"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/cash"
+          android:buttonTint="@color/light_green" />
+
+      <RadioButton android:id="@+id/radio_credit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/credit"
+          android:buttonTint="@color/light_green" />
+
+      <RadioButton android:id="@+id/radio_debit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/debit"
+          android:buttonTint="@color/light_green" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentlayout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+      <TextView
+          android:id="@+id/blank"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:height="50dp"/>
+
+      <TextView
+          android:id="@+id/firstNameText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/firstNameText"/>
+
+      <EditText
+          android:id="@+id/firstName"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:ems="10"
+          android:inputType="textPersonName"/>
+
+      <TextView
+          android:id="@+id/lastNameText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/lastNameText"/>
+
+      <EditText
+          android:id="@+id/lastName"
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:ems="10"
+          android:inputType="textPersonName" />
+
+      <TextView
+          android:id="@+id/card"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/cardText"/>
+
+
+      <EditText
+          android:id="@+id/cardNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="number"/>
+
+      <TextView
+          android:id="@+id/expire"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/expiryText"/>
+
+      <EditText
+          android:id="@+id/expiryDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="date"/>
+
+      <TextView
+          android:id="@+id/cvvNo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/cvv"/>
+
+      <EditText
+          android:id="@+id/cvv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="number"/>
+
+      </LinearLayout>
+      <Button
+          android:id="@+id/paymentBtn"
+          style="@style/Button_default"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:onClick="onClickPayment"
+          android:text="@string/payment_btn"
+          android:layout_gravity="center"
+          android:layout_marginTop="15dp"/>
+  </LinearLayout>
+</ScrollView>

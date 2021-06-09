@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Irinnahar_Comp304sec001_Lab2</string>
+
+    <!--    main activity strings-->
+    <string name="shop_name">Centennial Pizza</string>
+    <string name="order">Order</string>
+    <string name="ingredients">Ingredients: </string>
+    <string name="add_cart">Add to cart</string>
+
+    <!--    Menu activity strings -->
+    <string name="menu_title">Choose Your Pizza</string>
+    <string name="checkbox1">Canadian Pizza</string>
+    <string name="checkbox2">Chicken Caesar</string>
+    <string name="checkbox3">Hawaiian Pizza</string>
+    <string name="checkbox4">Smokey Maple Bacon</string>
+    <string name="checkbox5">Veggie Lover\'s</string>
+
+    <!--    Ingredients list-->
+    <string name="canadian_pizza">Topped with Pepperoni, Bacon crumble, Sliced mushrooms and Pizza mozzarella. </string>
+    <string name="chicken_ceaser">Seasoned grilled chicken breast, romaine lettuce, bacon strips, croutons and parmesan. Served with creamy Caesar dressing.</string>
+    <string name="hawaiian_pizza">Topped with tomato sauce, mozzarella cheese, sliced ham, and pineapple. Some people also sprinkle on a bit of cooked bacon.</string>
+    <string name="maple_bacon">Topped with smoky maple bacon, featuring Alfredo sauce, maple bacon strips, bacon crumble, sliced mushrooms, shredded cheddar and pizza mozzarella.</string>
+    <string name="veggie_lover">Topped with Roma tomatoes, mushrooms, red onions, green bell peppers, green chile peppers, green olives, Mediterranean black olives.</string>
+
+    <!--   pizza image path-->
+    <string name="canada_img">"@drawable/canada_pizza"</string>
+    <string name="chicken_ceaser_img">"@drawable/chicken_ceaser_pizza"</string>
+    <string name="hawaiian_img">"@drawable/hawaiian_pizza"</string>
+    <string name="maple_bacon_img">"@drawable/maple_bacon_pizza"</string>
+    <string name="vaggie_img">"@drawable/vaggie_pizza"</string>
+
+    <!--    Topping activity -->
+    <string name="topping_title">Select the size of the pizza</string>
+    <string name="crust_title">Select Your Crust</string>
+    <string name="thin_crust">Thin Crust</string>
+    <string name="thick_crust">Thick Crust</string>
+    <string-array name="pizza_size_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+    <string name="checkout">Proceed to Checkout</string>
+
+    <!--    Checkout Activity -->
+    <string name="checkout_title">Selected Pizza Details</string>
+    <string name="payment_btn">Proceed to Payment</string>
+
+    <!--    Payment Activity -->
+    <string name="payment_title">Add your payment method</string>
+    <string name="cash">Cash</string>
+    <string name="credit">Credit Card</string>
+    <string name="debit">Debit Card</string>
+    <string name="firstNameText">Enter first name</string>
+    <string name="lastNameText">Enter last name</string>
+    <string name="cardText">Enter card number</string>
+    <string name="expiryText">Card expiry date</string>
+    <string name="cvv">Enter Cvv</string>
+
+    <!--    Customer Activity -->
+    <string name="customer_title">Customer’ Information</string>
+    <string name="name">Full Name</string>
+    <string name="house">House No</string>
+    <string name="street">Street No</string>
+    <string name="city">City</string>
+    <string name="post">Postal Code</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">Email Address</string>
+    <string name="favPizza">Favorite Pizza Flavor</string>
+    <string name="extra">Favorite Sides</string>
+    <string name="user_btn">Confirm Order</string>
+
+<!--    order confirmation activity -->
+    <string name="order_confirm">Your Pizza order successfully completed</string>
+</resources>

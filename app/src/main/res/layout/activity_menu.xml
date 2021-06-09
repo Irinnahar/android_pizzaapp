@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        style="@style/default_activity_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menuTitle"
+            style="@style/Header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:text="@string/menu_title"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox1"
+            android:buttonTint="@color/light_green"
+            android:onClick="onCheckboxClicked"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox2"
+            android:buttonTint="@color/light_green"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox3"
+            android:buttonTint="@color/light_green"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox4"
+            android:buttonTint="@color/light_green"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox5"
+            android:buttonTint="@color/light_green"
+            android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:height="25dp"/>
+
+        <TextView
+            android:id="@+id/ingredientsTitle"
+            style="@style/Header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredients"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pizza_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/ingredient_details"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addToCartBtn"
+            style="@style/Button_default"
+            android:text="@string/add_cart"
+            android:visibility="gone"
+            android:onClick="onClickAddToCart"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</ScrollView>
